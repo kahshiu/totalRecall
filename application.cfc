@@ -8,7 +8,7 @@ component {
   this.clientManagement = false;
   this.setClientCookies = false;
 
-  this.mappings["/apis"] = getDirectoryFromPath(getCurrentTemplatePath()&"apis");
+  this.mappings["/api"] = getDirectoryFromPath(getCurrentTemplatePath()&"api");
   this.mappings["/testing"] = getDirectoryFromPath(getCurrentTemplatePath()&"testing");
   this.myEnv = "DEV";
 
@@ -115,14 +115,14 @@ component {
 
     application.vars = {};
     application.vars.mappings = {
-      "apis" = {
-        "error" = "apis/error.cfm",
+      "api" = {
+        "error" = "api/error.cfm",
       },
-      "apis/fw" = {
-        "auth" = "apis/fw/auth.cfm",
+      "api/fw" = {
+        "auth" = "api/fw/auth.cfm",
       },
-      "apis/app" = {
-        "announcement" = "apis/app/announcement.cfm",
+      "api/app" = {
+        "announcement" = "api/app/announcement.cfm",
       },
     }
 

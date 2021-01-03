@@ -3,7 +3,7 @@ component router {
     public static array function resolve (
         required struct mapRoute, 
         required string urlRoute,
-        string basePath = "apis",
+        string basePath = "api",
         string baseRoute = "error", 
     ) {
         var _path = basePath;
